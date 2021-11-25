@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+}
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    display: block;
+    padding: 1em;
+}
+
+.navbar a:hover {
+    color: blue;
+}
