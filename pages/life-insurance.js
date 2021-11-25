@@ -20,9 +20,9 @@ export default function Emergency() {
       insurance firms more</strong> than they benefit you.</li>
 	  <li>Shut you ears to the hard sell, or cut the loss and <strong>stop funding these policies.</strong></li>
 	  <li>You need a term plan to cover just the risk of you having an untimely death.</li>
-	  <li><a href="https://www.policybazaar.com/life-insurance/term-insurance/" target="_blank">Look for</a> a combination of a low premium and a claims experience of over 95 %</li>
-	  <li>You don't want a cheapest plan that comes from a firm that rejects a lot of claims.</li>
-	  <li>Try and <strong><a target="_blank" href="https://www.policybazaar.com/life-insurance/term-insurance/">buy online</a></strong> to cut out the agent commission</li>
+	  <li><a  rel="noreferrer" href="https://www.policybazaar.com/life-insurance/term-insurance/" target="_blank">Look for</a> a combination of a low premium and a claims experience of over 95 %</li>
+	  <li>You don&apos;t want a cheapest plan that comes from a firm that rejects a lot of claims.</li>
+	  <li>Try and <strong><a  rel="noreferrer" target="_blank" href="https://www.policybazaar.com/life-insurance/term-insurance/">buy online</a></strong> to cut out the agent commission</li>
 	  </ul>
 
       </main>

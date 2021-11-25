@@ -22,7 +22,7 @@ export default function Emergency() {
 	  <h2>Mutual Funds</h2>
 	  <ul>
 	  <li>Choose a fund that is conservative and not aggressive.</li>
-	  <li>You shouldn't buy a product for your emergency cell based on just high returns it has given in the past.</li>
+	  <li>You should not buy a product for your emergency cell based on just high returns it has given in the past.</li>
 <li>Check that the top holdings of your debt fund is in AAA-rated bonds.</li>
 <li>You may even move your emergency money to a conservative balanced fund.</li>
 	  </ul>
