@@ -1,8 +1,23 @@
 import styles from "../styles/Home.module.css";
 
 import Head from "next/head";
+import { useState } from 'react';
 
 export default function Emergency() {
+    const [ monthlySpending, setMonthlySpending] = useState(10000);
+    const [minRetirement, setMinRetirement] = useState(18 * 12 * monthlySpending);
+    const [maxRetirement, setMaxRetirement] = useState(35 * 12 * monthlySpending);
+
+    function updateRetirement(ev) {
+	setMinRetirement(18 * 12 * ev.target.value);
+	setMaxRetirement(35 * 12 * ev.target.value);
+	setMonthlySpending(ev.target.value);
+    }
+
+    function formatRupee(amt) {
+	return new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(amt);
+    }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,21 +27,28 @@ export default function Emergency() {
       </Head>
       <main className={styles.main}>
         <h1>Retirement</h1>
-	  <h2>Fixed Deposits</h2>
+	  <h2>How much do you need</h2>
+	  <form>
+	  <p><label>Monthly spending:</label>
+	  <input type="number" value={monthlySpending} onChange={(ev) => updateRetirement(ev)}/>
+	  </p>
+	  <p><label>18-35x of Annual spending:</label>
+	  <span>&#8377; {formatRupee(minRetirement)}</span> - 
+	  <span>{formatRupee(maxRetirement)}</span>
+	  </p>
+	  </form>
+	  <h2>Financially Free</h2>
 	  <ul>
-	  <li>At times, 3 year FD gives more than 5 year FD</li>
-	  <li>Cost of about 0.5 % of interest for an early exit from FD</li>
-	  <li>It is worth to pay that and keep the money in an FD rather than a savings deposit that gives you
-      an interest of 2.75 %, as in July 2020.</li>
+	  <li>We need to create a retirement corpus so that by age 60 we are financially free.</li>
+	  <li>You are financially free when you don't need to work to pay your bills. You have enough assets that generate enough income today and for the rest of your life.</li>
 	  </ul>
-	  <h2>Mutual Funds</h2>
+	  <h2>Save Your Age</h2>
 	  <ul>
 	  <li>Choose a fund that is conservative and not aggressive.</li>
 <li>Check that the top holdings of your debt fund is in AAA-rated bonds.</li>
 <li>You may even move your emergency money to a conservative balanced fund.</li>
 	  </ul>
-<blockquote>Finance is not just about numbers, it should work for all the people in the house
-and must look after individual preferences, fears and goals.</blockquote>
+	  <h2>Multiply Your Spend</h2>
 
       </main>
     </div>
